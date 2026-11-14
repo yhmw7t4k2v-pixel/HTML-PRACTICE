@@ -1,30 +1,83 @@
 
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>JavaScript Practice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Profile</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f4f7;
-            text-align: center;
-            padding: 50px;
+            background-color: #fce4ec;
+            margin: 0;
+            padding: 30px;
         }
 
-        h1 {
-            color: #333;
+        .profile {
+            max-width: 500px;
+            margin: 60px auto;
+            padding: 25px;
+            background-color: white;
+            border: 2px solid #d98ca3;
+            border-radius: 15px;
+        }
+
+        h2 {
+            color: #ad456b;
+            text-align: center;
         }
 
         p {
             color: #555;
+            padding: 12px;
+            background-color: #fff5f8;
+            border-radius: 8px;
+            margin: 12px 0;
+        }
+
+        .footer {
+            text-align: center;
+            color: #b77b8e;
+            font-size: 12px;
+            margin-top: 25px;
         }
     </style>
 </head>
+
 <body>
 
-    <h1>JavaScript Practice</h1>
-    <p>Open Developer Tools and check the Console.</p>
+    <div class="profile">
+        <h2>My Student Profile</h2>
+
+        <p><strong>Name:</strong> Alexa</p>
+        <p><strong>Age:</strong> 18</p>
+        <p><strong>Course:</strong> Bachelor of Science in Information Technology</p>
+
+        <div class="footer">
+            My JavaScript Practice Activity
+        </div>
+    </div>
+
+    <script>
+        let name = "Alexa";
+        let age = 18;
+        let course = "Bachelor of Science in Information Technology";
+
+        console.log("Hello! My name is " + name + ". I am " + age + " years old and currently taking " + course + ".");
+
+        let favoriteFoods = ["Chicken", "Pizza", "Adobo", "Spaghetti"];
+
+        console.log("My favorite foods:", favoriteFoods);
+
+        favoriteFoods.push("Burger");
+
+        console.log("Total favorite foods: " + favoriteFoods.length);
+
+        console.log("Is my age greater than 18? " + (age > 18));
+    </script>
 
 </body>
 </html>
